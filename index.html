@@ -10,7 +10,14 @@
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-W6VZWFM"></script>
   </head>
 
+  <script>
+    function onGoBack() {
+      window.ReactNativeWebView.postMessage("goHomePage");
+    }
+  </script>
   <body>
+    <button onclick="onGoBack()">Go Back</button>
+
     <h1>This is test webview pages</h1>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
